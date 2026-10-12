@@ -1,0 +1,62 @@
+cv:
+  name: Afonso Azaruja
+  headline: SAP ABAP/CAP/CPI Developer
+  location: Lisbon, Portugal
+  email: me@afonsoazaruja.com
+  website: https://afonsoazaruja.com/
+  social_networks:
+    - network: LinkedIn
+      username: afonsoazaruja
+    - network: GitHub
+      username: afonsoazaruja
+  sections:
+    experience:
+      - company: '[Stratesys](https://www.stratesys-ts.com/)'
+        position: Technical Consultant — SAP ABAP/CAP/CPI Developer
+        start_date: 2024-09
+        end_date: present
+        highlights:
+          - Develop SAP solutions with ABAP, the SAP Cloud Application Programming Model (CAP) and SAP Cloud Platform Integration (CPI).
+    education:
+      - institution: Instituto Superior Técnico
+        area: Computer Science and Engineering
+        degree: BSc
+        start_date: 2021-09
+        end_date: 2024-07
+        location: Lisbon, Portugal
+    projects:
+      - name: '[Image cropping and scaling for Zulip](https://github.com/zulip/zulip/pull/30280)'
+        start_date: 2024-05
+        end_date: 2024-07
+        summary: Open-source contribution to Zulip, a team chat app with almost one million lines of code.
+        highlights:
+          - Built, in a pair, the first implementation of cropping and scaling for profile picture uploads (about 1,000 lines in TypeScript, JavaScript, Handlebars and CSS); a later PR completed the feature.
+          - Had a [bug fix merged](https://github.com/zulip/zulip/pull/29337) for an extraneous shadow on link previews.
+          - Followed Zulip's strict coding guidelines and commit discipline.
+      - name: '[HumanaEthica](https://github.com/afonsoazaruja/HumanaEthica)'
+        start_date: 2024-02
+        end_date: 2024-04
+        summary: Volunteer management web app, built in a team of seven for the Software Engineering course at IST.
+        highlights:
+          - Implemented volunteer applications, institution selection and volunteer evaluations, full stack in Java, Groovy and Vue.
+          - Worked with Agile practices, GitLab issue boards, automated tests and Docker.
+      - name: '[Charity marathon](https://afonsoazaruja.com/projects/charity-marathon/)'
+        date: 2025-05
+        summary: Co-organised a 42 km group run for about 30 people, raising around €300 and food donations for ReFood.
+    skills:
+      - label: Languages
+        details: ABAP, Java, JavaScript, TypeScript, Python, C, C++, SQL, HTML, CSS
+      - label: Tools
+        details: SAP CAP, SAP CPI, Git, Docker, Linux
+      - label: Spoken
+        details: Portuguese (native), English (C2), Spanish (B1), German (A1)
+design:
+  theme: classic
+locale:
+  language: english
+settings:
+  render_command:
+    output_folder: dist
+    typst_path: dist/afonso-azaruja-cv.typ
+    pdf_path: dist/afonso-azaruja-cv.pdf
+    dont_generate_png: true

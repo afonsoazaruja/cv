@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{name}} — CV</title>
+<meta name="description" content="CV of {{name}}, {{headline}} in {{location}}.">
+<link rel="canonical" href="https://cv.afonsoazaruja.com/">
+<link rel="alternate" type="application/pdf" href="{{pdf}}">
+<script type="application/ld+json">{{jsonld}}</script>
+<style>
+  :root { --bg: #fbfaf7; --ink: #1f1a16; --muted: #6b625a; --rule: #d9d3cb; --link: #0b4f8a; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.55 system-ui, -apple-system, 'Segoe UI', sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 48px 16px 64px; }
+  a { color: var(--link); text-underline-offset: 2px; }
+  h1 { margin: 0; font-size: 34px; line-height: 1.1; }
+  .headline { margin: 6px 0 0; font-size: 18px; color: var(--muted); }
+  .contact { margin: 12px 0 0; color: var(--muted); }
+  .pdf { display: inline-block; margin-top: 20px; padding: 8px 14px; border: 1px solid var(--ink); color: var(--ink); text-decoration: none; font-weight: 600; }
+  .pdf:hover { background: var(--ink); color: var(--bg); }
+  h2 { margin: 40px 0 12px; padding-bottom: 6px; border-bottom: 1px solid var(--rule); font-size: 13px; letter-spacing: 0.12em; text-transform: uppercase; }
+  article + article { margin-top: 20px; }
+  article header { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 4px 16px; }
+  h3 { margin: 0; font-size: 17px; }
+  h3 a { color: inherit; }
+  time { color: var(--muted); font-size: 14px; font-variant-numeric: tabular-nums; }
+  p { margin: 4px 0 0; }
+  .sub { color: var(--muted); }
+  ul { margin: 6px 0 0; padding-left: 20px; }
+  li + li { margin-top: 2px; }
+  dl { margin: 0; display: grid; gap: 6px; }
+  dl div { display: grid; grid-template-columns: 110px 1fr; gap: 16px; }
+  dt { font-weight: 600; }
+  dd { margin: 0; }
+  footer { margin-top: 48px; color: var(--muted); font-size: 14px; }
+  @media (max-width: 520px) { dl div { grid-template-columns: 1fr; gap: 0; } }
+  @media print { .pdf, footer { display: none; } main { padding: 0; } a { color: inherit; } }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>{{name}}</h1>
+    <p class="headline">{{headline}}</p>
+    <p class="contact">{{location}} · {{links}}</p>
+    <a class="pdf" href="{{pdf}}" download>Download PDF</a>
+  </header>
+  {{body}}
+  <footer>Updated {{updated}} · <a href="https://afonsoazaruja.com/">afonsoazaruja.com</a></footer>
+</main>
+</body>
+</html>
