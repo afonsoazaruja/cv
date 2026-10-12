@@ -1,6 +1,6 @@
 cv:
-  name: Afonso Azaruja
-  headline: SAP ABAP/CAP/CPI Developer
+  name: Afonso Carraça Azaruja
+  headline: Software Developer
   location: Lisbon, Portugal
   email: me@afonsoazaruja.com
   website: https://afonsoazaruja.com/
@@ -16,7 +16,9 @@ cv:
         start_date: 2024-09
         end_date: present
         highlights:
-          - Develop SAP solutions with ABAP, the SAP Cloud Application Programming Model (CAP) and SAP Cloud Platform Integration (CPI).
+          - Build full-stack applications with the SAP Cloud Application Programming Model (CAP) on the backend and SAPUI5/Fiori on the frontend.
+          - Design integration flows in SAP Cloud Integration (CPI) that connect multiple systems.
+          - Develop ABAP on SAP backend systems.
     education:
       - institution: Instituto Superior Técnico
         area: Computer Science and Engineering
@@ -47,7 +49,7 @@ cv:
       - label: Languages
         details: ABAP, Java, JavaScript, TypeScript, Python, C, C++, SQL, HTML, CSS
       - label: Tools
-        details: SAP CAP, SAP CPI, Git, Docker, Linux
+        details: SAP CAP, SAPUI5/Fiori, SAP CPI, Git, Docker, Linux
       - label: Spoken
         details: Portuguese (native), English (C2), Spanish (B1), German (A1)
 design:
